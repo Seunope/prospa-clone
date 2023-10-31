@@ -8,6 +8,9 @@ const COLORS = {
 
   gray: "#83829A",
   blueGray: "#F7F9FC",
+  gray2: "#8397AB",
+  gray3: "#82849F",
+  grayLight: "#F5F5F7",
 
   black: "#1C1335",
   black2: "#2E3A59",
@@ -18,6 +21,8 @@ const COLORS = {
 
   white: "#FFFFFF",
   blue: "#7E51FF",
+
+  purple: "rgba(126, 81, 255, 0.3)",
 };
 
 const FONT = {

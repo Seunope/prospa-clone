@@ -18,7 +18,7 @@ const AppTabs = createBottomTabNavigator<DashboardStackParams>();
 const CustomHomeButtom = ({ children, onPress }) => (
   <TouchableOpacity
     style={{
-      top: -15,
+      top: -1,
       marginLeft: 30,
       marginRight: 30,
       justifyContent: "center",
@@ -36,15 +36,15 @@ const CustomHomeText = (focused: boolean) => (
       marginBottom: 2,
     }}
   >
-    <icons.bottomNavHome />
-    <Text
+    <icons.bottomNavBiz />
+    {/* <Text
     // color={focused ? colors.blue[70] : colors.gray[100]}
     // top="-4"
     // textAlign="center"
     // fontSize="2xs"
     >
       Home
-    </Text>
+    </Text> */}
   </View>
 );
 
@@ -68,12 +68,42 @@ export default () => {
       />
 
       <AppTabs.Screen
-        name="Beneficiary"
+        name="Transaction"
         component={Dashboard}
         options={{
           headerTitle: "",
           headerTransparent: true,
-          tabBarIcon: () => <icons.bottomNavHome />,
+          tabBarIcon: () => <icons.bottomNavTrans />,
+        }}
+      />
+      <AppTabs.Screen
+        name="Business"
+        component={Dashboard}
+        options={{
+          headerTitle: "",
+          headerTransparent: true,
+          tabBarIcon: ({ focused }) => <CustomHomeText focused={focused} />,
+          tabBarButton: (props) => <CustomHomeButtom {...props} />,
+        }}
+      />
+
+      <AppTabs.Screen
+        name="Invoice"
+        component={Dashboard}
+        options={{
+          headerTitle: "",
+          headerTransparent: true,
+          tabBarIcon: () => <icons.bottomNavInvoice />,
+        }}
+      />
+
+      <AppTabs.Screen
+        name="Other"
+        component={Dashboard}
+        options={{
+          headerTitle: "",
+          headerTransparent: true,
+          tabBarIcon: () => <icons.bottomNavOthers />,
         }}
       />
 

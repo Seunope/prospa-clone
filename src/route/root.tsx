@@ -1,7 +1,7 @@
 import React from "react";
 import DashboardTab from "./dashboard";
 import SignUp from "../screens/signup";
-import Ledger from "../screens/ledger";
+import Ledger from "../screens/ledger/ledger";
 import { createStackNavigator } from "@react-navigation/stack";
 import { AppStateProvider } from "../config/utils/context/app_state";
 
@@ -14,7 +14,7 @@ type RootStackParamList = {
 const RootStack = createStackNavigator<RootStackParamList>();
 const RootStackScreen = () => {
   return (
-    <RootStack.Navigator initialRouteName="DashboardTab">
+    <RootStack.Navigator initialRouteName="Ledger">
       <RootStack.Screen
         name="DashboardTab"
         component={DashboardTab}

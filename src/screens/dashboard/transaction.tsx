@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { COLORS, FONT, SIZES, icons } from "../../config/utils";
 import ArrowDown from "../../assets/dashboard/others/arrow-down";
-import TransactionIcon from "../../assets/dashboard/others/transaction";
+import TransactionIcon from "../../assets/ledger/trans";
 
 export default () => {
   return (
