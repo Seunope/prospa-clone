@@ -4,6 +4,7 @@ import "react-native-gesture-handler";
 import { useState, useEffect } from "react";
 import RootNavigation from "./src/route/root";
 import { NavigationContainer } from "@react-navigation/native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState<boolean>(false);
@@ -25,7 +26,9 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <RootNavigation />
+      <SafeAreaProvider>
+        <RootNavigation />
+      </SafeAreaProvider>
     </NavigationContainer>
   );
 }

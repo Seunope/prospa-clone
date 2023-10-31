@@ -8,8 +8,10 @@
 // import location from "../assets/icons/location.png";
 // import chevronLeft from '../assets/icons/chevron-left.png'
 // import chevronRight from '../assets/icons/chevron-right.png'
-import bottomNavHome from "../../assets/dashboard/home";
+import bottomNavHome from "../../assets/dashboard/nav/home";
+import profile from "../../assets/dashboard/others/profile";
 
 export default {
   bottomNavHome,
+  profile,
 };

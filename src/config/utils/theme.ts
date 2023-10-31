@@ -1,14 +1,23 @@
 import { moderateScale } from "./scaling";
 const COLORS = {
-  primary: "#312651",
-  secondary: "#444262",
-  tertiary: "#FF7754",
+  red: "#FA4A84",
+  lightRed: "#FEC9DB",
+  // primary: "#312651",
+  // secondary: "#444262",
+  // tertiary: "#FF7754",
 
   gray: "#83829A",
-  gray2: "#C1C0C8",
+  blueGray: "#F7F9FC",
 
-  white: "#F3F4F8",
-  lightWhite: "#FAFAFC",
+  black: "#1C1335",
+  black2: "#2E3A59",
+  black3: "#1C1335",
+  // gray2: "#C1C0C8",
+
+  green: "#4CD964",
+
+  white: "#FFFFFF",
+  blue: "#7E51FF",
 };
 
 const FONT = {
@@ -19,11 +28,12 @@ const FONT = {
 };
 
 const SIZES = {
+  "2xs": moderateScale(7),
   xs: moderateScale(10),
   sm: moderateScale(12),
-  med: moderateScale(16),
+  md: moderateScale(16),
   lg: moderateScale(20),
-  xL: moderateScale(24),
+  xl: moderateScale(24),
   "2xl": moderateScale(32),
 };
 

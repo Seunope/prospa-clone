@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from "react";
-import Dashboard from "../screens/dashboard";
+import Dashboard from "../screens/dashboard/dashboard";
 import { icons } from "../config/utils";
 import { Text, TouchableOpacity, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
