@@ -12,9 +12,10 @@ const COLORS = {
 };
 
 const FONT = {
-  regular: "DMRegular",
-  medium: "DMMedium",
-  bold: "DMBold",
+  light: "BRFirmaLight",
+  regular: "BRFirmaRegular",
+  medium: "BRFirmaMedium",
+  bold: "BRFirmaBold",
 };
 
 const SIZES = {
