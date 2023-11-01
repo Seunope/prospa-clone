@@ -2,9 +2,6 @@ import { moderateScale } from "./scaling";
 const COLORS = {
   red: "#FA4A84",
   lightRed: "#FEC9DB",
-  // primary: "#312651",
-  // secondary: "#444262",
-  // tertiary: "#FF7754",
 
   gray: "#83829A",
   blueGray: "#F7F9FC",
@@ -15,7 +12,6 @@ const COLORS = {
   black: "#1C1335",
   black2: "#2E3A59",
   black3: "#1C1335",
-  // gray2: "#C1C0C8",
 
   green: "#4CD964",
 

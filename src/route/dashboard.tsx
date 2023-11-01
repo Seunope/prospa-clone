@@ -1,15 +1,11 @@
-/* eslint-disable react-native/no-inline-styles */
 import React from "react";
-import Dashboard from "../screens/dashboard/dashboard";
-import Ledger from "../screens/ledger/ledger";
 import { icons } from "../config/utils";
-import { Text, TouchableOpacity, View } from "react-native";
+import Others from "../screens/other";
+import Dashboard from "../screens/dashboard/dashboard";
+import { TouchableOpacity, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 export type DashboardStackParams = {
-  // Home: undefined;
-  // Refer: undefined;
-  // Settings: undefined;
   Dashboard: undefined;
   Beneficiary: undefined;
 };
@@ -70,7 +66,7 @@ export default () => {
 
       <AppTabs.Screen
         name="Transaction"
-        component={Dashboard}
+        component={Others}
         options={{
           headerTitle: "",
           headerTransparent: true,
@@ -90,7 +86,7 @@ export default () => {
 
       <AppTabs.Screen
         name="Invoice"
-        component={Dashboard}
+        component={Others}
         options={{
           headerTitle: "",
           headerTransparent: true,
@@ -100,42 +96,13 @@ export default () => {
 
       <AppTabs.Screen
         name="Other"
-        component={Dashboard}
+        component={Others}
         options={{
           headerTitle: "",
           headerTransparent: true,
           tabBarIcon: () => <icons.bottomNavOthers />,
         }}
       />
-
-      {/* <AppTabs.Screen
-        name="Home"
-        component={Notification}
-        options={{
-          headerTitle: "",
-          headerTransparent: true,
-          tabBarIcon: ({ focused }) => <CustomHomeText focused={focused} />,
-          tabBarButton: (props) => <CustomHomeButtom {...props} />,
-        }}
-      /> */}
-      {/* <AppTabs.Screen
-        name="Refer"
-        component={Notification}
-        options={{
-          headerTitle: "",
-          headerTransparent: true,
-          tabBarIcon: () => <ReferIcon />,
-        }}
-      />
-      <AppTabs.Screen
-        name="Settings"
-        component={Notification}
-        options={{
-          headerTitle: "",
-          headerTransparent: true,
-          tabBarIcon: () => <SettingsIcon />,
-        }}
-      /> */}
     </AppTabs.Navigator>
   );
 };
