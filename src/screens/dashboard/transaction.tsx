@@ -1,10 +1,12 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { COLORS, FONT, SIZES, icons } from "../../config/utils";
-import ArrowDown from "../../assets/dashboard/others/arrow-down";
+import { useNavigation } from "@react-navigation/core";
 import TransactionIcon from "../../assets/ledger/trans";
+import { COLORS, FONT, SIZES } from "../../config/utils";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default () => {
+  const navigation = useNavigation<any>();
+
   return (
     <>
       <View style={styles.container}>
@@ -12,7 +14,11 @@ export default () => {
         <Text style={styles.textSupport}>View all</Text>
       </View>
 
-      <View style={styles.containerTransaction}>
+      <TouchableOpacity
+        activeOpacity={0.4}
+        style={styles.containerTransaction}
+        onPress={() => navigation.navigate("Ledger")}
+      >
         <TransactionIcon />
         <View style={styles.containerTrans}>
           <View style={styles.containerTransTile}>
@@ -22,7 +28,7 @@ export default () => {
 
           <Text style={styles.textSubTile}>Today, 8.40am</Text>
         </View>
-      </View>
+      </TouchableOpacity>
     </>
   );
 };

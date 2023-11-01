@@ -21,6 +21,7 @@ const COLORS = {
 
   white: "#FFFFFF",
   blue: "#7E51FF",
+  darkBlue: "#1C003B",
 
   purple: "rgba(126, 81, 255, 0.3)",
 };

@@ -15,7 +15,7 @@ export default () => {
             <View
               style={{
                 backgroundColor: isPressed ? COLORS.white : COLORS.blueGray,
-                borderRadius: 20,
+                borderRadius: 30,
                 padding: 4,
               }}
             >

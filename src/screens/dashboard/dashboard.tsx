@@ -1,14 +1,13 @@
 import React from "react";
-import { StatusBar, StyleSheet, Text, View } from "react-native";
-import { Box } from "../../components/ui";
-import { COLORS, FONT } from "../../config/utils/theme";
-import AppContainer from "../../components/others/AppContainer";
 import Header from "./header";
-import Features from "./features";
 import Funds from "./funds";
-import Transaction from "./transaction";
 import Points from "./points";
+import Features from "./features";
 import Essential from "./essential";
+import Transaction from "./transaction";
+import { COLORS, FONT } from "../../config/utils/theme";
+import { StatusBar, StyleSheet, Text, View } from "react-native";
+import AppContainer from "../../components/others/AppContainer";
 
 export default () => {
   return (
@@ -16,7 +15,7 @@ export default () => {
       <StatusBar
         translucent
         backgroundColor="transparent"
-        // hidden={false}
+        hidden={false}
         barStyle="dark-content"
       />
       <View style={{ backgroundColor: COLORS.blueGray }}>

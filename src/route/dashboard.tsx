@@ -1,6 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from "react";
 import Dashboard from "../screens/dashboard/dashboard";
+import Ledger from "../screens/ledger/ledger";
 import { icons } from "../config/utils";
 import { Text, TouchableOpacity, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
