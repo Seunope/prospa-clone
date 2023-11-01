@@ -35,7 +35,7 @@ export default () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10,
+    marginTop: 5,
     flexDirection: "row",
     paddingHorizontal: 10,
     alignItems: "center",

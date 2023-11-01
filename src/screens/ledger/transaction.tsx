@@ -17,7 +17,9 @@ export default () => {
       </View>
 
       <View style={styles.containerTransBox}>
-        <Text style={{ color: COLORS.gray3 }}>11 December 2012</Text>
+        <Text style={{ color: COLORS.gray3, fontFamily: FONT.bold }}>
+          11 December 2012
+        </Text>
         <View style={styles.containerTransaction}>
           <TransBoxIcon />
           <View style={styles.containerTrans}>
@@ -32,7 +34,9 @@ export default () => {
       </View>
 
       <View style={styles.containerTransBox}>
-        <Text style={{ color: COLORS.gray3 }}>11 December 2021</Text>
+        <Text style={{ color: COLORS.gray3, fontFamily: FONT.bold }}>
+          11 December 2021
+        </Text>
         <View style={styles.containerTransaction}>
           <TransBoxIcon />
           <View style={styles.containerTrans}>
@@ -99,7 +103,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   textTile: {
-    fontFamily: FONT.medium,
+    fontFamily: FONT.bold,
   },
   textSubTile: {
     fontFamily: FONT.regular,
@@ -108,6 +112,7 @@ const styles = StyleSheet.create({
   },
   textAmount: {
     color: COLORS.gray2,
+    fontFamily: FONT.bold,
   },
 
   textDate: {

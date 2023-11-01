@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   containerButton: {
     marginVertical: 30,
     flexDirection: "row",
-    paddingHorizontal: 10,
+    paddingHorizontal: 0,
     alignItems: "center",
     justifyContent: "space-between",
   },
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
   textAccount: {
     color: COLORS.red,
-    fontFamily: FONT.light,
+    fontFamily: FONT.regular,
     fontSize: SIZES.sm,
   },
   textAvailableBalance: {
@@ -84,17 +84,15 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    // alignItems: "center",
-    // justifyContent: "center",
     paddingVertical: 12,
     borderRadius: 8,
     paddingHorizontal: SIZES["2xl"],
-    // elevation: 3,
     backgroundColor: COLORS.lightRed,
   },
 
   text: {
     borderRadius: 8,
+    fontFamily: FONT.bold,
     fontSize: SIZES.sm,
     lineHeight: SIZES.md,
     letterSpacing: 0.25,

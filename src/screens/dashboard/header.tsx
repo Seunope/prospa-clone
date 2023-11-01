@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   text1: {
     paddingLeft: 10,
     paddingRight: 5,
-    fontFamily: FONT.regular,
+    fontFamily: FONT.medium,
   },
   textSupport: {
     // padding: 0,

@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
   },
   textEmail: {
-    fontFamily: FONT.medium,
+    fontFamily: FONT.bold,
   },
   buttonTextStyle: {
     color: "#fff",

@@ -121,12 +121,12 @@ const styles = StyleSheet.create({
   textSubTitle: {
     fontSize: SIZES.sm,
     color: COLORS.black2,
-    fontFamily: FONT.regular,
+    fontFamily: FONT.medium,
   },
   textBalance: {
     marginTop: 20,
     color: COLORS.green,
     fontSize: SIZES.sm,
-    fontFamily: FONT.regular,
+    fontFamily: FONT.bold,
   },
 });

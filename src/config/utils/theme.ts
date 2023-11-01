@@ -27,10 +27,10 @@ const COLORS = {
 };
 
 const FONT = {
-  light: "BRFirmaLight",
-  regular: "BRFirmaRegular",
-  medium: "BRFirmaMedium",
-  bold: "BRFirmaBold",
+  light: "BRFirma-Light",
+  regular: "BRFirma-Regular",
+  medium: "BRFirma-Medium",
+  bold: "BRFirma-Bold",
 };
 
 const SIZES = {

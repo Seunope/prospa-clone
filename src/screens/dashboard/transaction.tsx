@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   textTile: {
-    fontFamily: FONT.medium,
+    fontFamily: FONT.bold,
   },
   textSubTile: {
     fontFamily: FONT.regular,
@@ -70,10 +70,9 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 5,
     color: COLORS.black2,
-    fontFamily: FONT.medium,
+    fontFamily: FONT.bold,
   },
   textSupport: {
-    // padding: 0,
     color: COLORS.red,
     paddingRight: 5,
     fontSize: SIZES.sm,

@@ -12,7 +12,7 @@ export default () => {
     <View style={styles.container}>
       <View>
         <View style={styles.containerTitle}>
-          <Text>Money in</Text>
+          <Text style={styles.textTitle}>Money in</Text>
           <Text style={styles.textAmount}>N20,000</Text>
         </View>
         <View style={styles.containerProgress}>
@@ -28,7 +28,7 @@ export default () => {
 
       <View style={{ marginTop: 5 }}>
         <View style={styles.containerTitle}>
-          <Text>Money out</Text>
+          <Text style={styles.textTitle}>Money out</Text>
           <Text style={styles.textAmount}>N20,000</Text>
         </View>
         <View style={styles.containerProgress}>
@@ -44,7 +44,7 @@ export default () => {
 
       <View style={{ marginTop: 5 }}>
         <View style={styles.containerTitle}>
-          <Text>Wallet balance</Text>
+          <Text style={styles.textTitle}>Wallet balance</Text>
           <Text style={styles.textAmount}>N20,000</Text>
         </View>
         <View style={styles.containerProgress}>
@@ -80,5 +80,8 @@ const styles = StyleSheet.create({
   textAmount: {
     fontFamily: FONT.bold,
     fontSize: SIZES.sm,
+  },
+  textTitle: {
+    fontFamily: FONT.regular,
   },
 });

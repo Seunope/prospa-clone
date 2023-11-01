@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   textTile: {
-    fontFamily: FONT.medium,
+    fontFamily: FONT.bold,
   },
   textSubTile: {
     fontFamily: FONT.regular,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 5,
     color: COLORS.black2,
-    fontFamily: FONT.medium,
+    fontFamily: FONT.bold,
   },
   textSupport: {
     // padding: 0,

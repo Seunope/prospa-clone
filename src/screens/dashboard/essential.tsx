@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   textTile: {
     marginTop: 30,
     marginBottom: 20,
-    fontFamily: FONT.medium,
+    fontFamily: FONT.bold,
   },
   textReferralCount: {
     marginRight: 10,
@@ -90,18 +90,18 @@ const styles = StyleSheet.create({
     marginTop: 20,
     color: COLORS.white,
     fontFamily: FONT.light,
-    fontSize: SIZES.sm,
+    fontSize: SIZES.xs,
   },
   textEarnAmount: {
     paddingVertical: 5,
     color: COLORS.white,
-    fontFamily: FONT.light,
+    fontFamily: FONT.bold,
     fontSize: SIZES.sm,
   },
   textEarnMessage: {
     paddingRight: 10,
     color: COLORS.white,
     fontFamily: FONT.light,
-    fontSize: SIZES.xs,
+    fontSize: SIZES["2xs"],
   },
 });
